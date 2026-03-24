@@ -1,0 +1,3 @@
+src/simulation/modules/aluu.v
+src/simulation/modules/registerr.v
+src/simulation/testbench_uvm.sv

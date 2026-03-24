@@ -1,0 +1,3 @@
+Info (10281): Verilog HDL Declaration information at cpu.v(6): object "in" differs only in case from object "IN" in the same scope
+Info (10281): Verilog HDL Declaration information at cpu.v(10): object "out" differs only in case from object "OUT" in the same scope
+Warning (10268): Verilog HDL information at memory.v(16): always construct contains both blocking and non-blocking assignments

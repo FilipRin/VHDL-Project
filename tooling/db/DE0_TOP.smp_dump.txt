@@ -1,0 +1,29 @@
+
+State Machine - |DE0_TOP|top:top_inst|cpu:cpu_inst|state_reg
+Name state_reg.HALT state_reg.STOP_Z_ADDR state_reg.STOP_Y_ADDR state_reg.STOP_X_ADDR state_reg.OUT_X_WAIT state_reg.OUT_X_ADDR state_reg.IN_X_WRITE state_reg.IN_X_ADDR state_reg.ALU_X_WRITE state_reg.ALU_X_ADDR state_reg.ALU_Z_CHECK state_reg.ALU_Z_WAIT state_reg.ALU_Z_ADDR state_reg.ALU_Y_CHECK state_reg.ALU_Y_WAIT state_reg.ALU_Y_ADDR state_reg.MOV_X_WRITE state_reg.MOV_X_ADDR state_reg.MOV_Y_CHECK state_reg.MOV_Y_WAIT state_reg.MOV_Y_ADDR state_reg.DECODE state_reg.INSTRUCTION_FETCH state_reg.FETCH_WAIT state_reg.FETCH1 state_reg.INIT 
+state_reg.INIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state_reg.FETCH1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state_reg.FETCH_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state_reg.INSTRUCTION_FETCH 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state_reg.DECODE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state_reg.MOV_Y_ADDR 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state_reg.MOV_Y_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state_reg.MOV_Y_CHECK 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state_reg.MOV_X_ADDR 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state_reg.MOV_X_WRITE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state_reg.ALU_Y_ADDR 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state_reg.ALU_Y_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state_reg.ALU_Y_CHECK 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state_reg.ALU_Z_ADDR 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_reg.ALU_Z_WAIT 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_reg.ALU_Z_CHECK 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_reg.ALU_X_ADDR 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_reg.ALU_X_WRITE 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_reg.IN_X_ADDR 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_reg.IN_X_WRITE 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_reg.OUT_X_ADDR 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_reg.OUT_X_WAIT 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_reg.STOP_X_ADDR 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_reg.STOP_Y_ADDR 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_reg.STOP_Z_ADDR 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_reg.HALT 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
